@@ -34,8 +34,16 @@
       </button>
     </div>
     <div class="hidden lg:flex lg:gap-x-12">
-      <a href="{% url 'mentorados' %}" class="text-sm/6 font-semibold text-gray-100">Mentorados</a>
-      <a href="{% url 'reunioes' %}" class="text-sm/6 font-semibold text-gray-100">Reuniões</a>
+      <a
+        href="{% url 'mentorados' %}"
+        class="text-sm/6 font-semibold text-gray-100"
+        >Mentorados</a
+      >
+      <a
+        href="{% url 'reunioes' %}"
+        class="text-sm/6 font-semibold text-gray-100"
+        >Reuniões</a
+      >
     </div>
     <div class="hidden lg:flex lg:flex-1 lg:justify-end"></div>
   </nav>
@@ -87,12 +95,18 @@
                 alt=""
               />
               <div class="min-w-0 flex-auto">
-                <p class="text-sm/6 font-semibold text-white">{{ reuniao.mentorado.nome}}</p>
-                <p class="mt-1 truncate text-xs/5 text-gray-400">{{ reuniao.descricao }}</p>
+                <p class="text-sm/6 font-semibold text-white">
+                  {{ reuniao.mentorado.nome}}
+                </p>
+                <p class="mt-1 truncate text-xs/5 text-gray-400">
+                  {{ reuniao.descricao }}
+                </p>
               </div>
             </div>
             <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
-              <p class="text-sm/6 text-white">{{ reuniao.data.data_inicial }}</p>
+              <p class="text-sm/6 text-white">
+                {{ reuniao.data.data_inicial }}
+              </p>
               <p class="mt-1 text-xs/5 text-gray-400"></p>
             </div>
           </li>
